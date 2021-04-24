@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Automation regression suite" thread-count = "3" parallel = "tests" verbose="3">
+
+
+	<test name="Amazon Test -- Safari">
+	<parameter name="browser" value="safari" />
+		<classes>
+			<class name="testngsessions.AmazonTest">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Open Cart Test -- Safari">
+	<parameter name="browser" value="safari" />
+		<classes>
+			<class name="testngsessions.OpenCartTest">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Orange HRM Test -- Safari">
+	<parameter name="browser" value="safari" />
+		<classes>
+			<class name="testngsessions.OrangeHRMTest">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Amazon Test -- Firefox">
+	<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="testngsessions.AmazonTest">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Open Cart Test -- Firefox">
+	<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="testngsessions.OpenCartTest">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Orange HRM Test -- Firefox">
+	<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="testngsessions.OrangeHRMTest">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Amazon Test -- Chrome">
+	<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testngsessions.AmazonTest">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Open Cart Test -- Chrome">
+	<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testngsessions.OpenCartTest">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Orange HRM Test -- Chrome">
+	<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testngsessions.OrangeHRMTest">
+			</class>
+		</classes>
+	</test>
+	
+</suite>
